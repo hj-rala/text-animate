@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> new document </title>
+<meta name="generator" content="editplus" />
+<meta name="author" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<link rel="stylesheet" href="../css/reset.css" />
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+
+
+<script type="text/javascript" src="jquery.lettering.js"></script>
+<script type="text/javascript" src="jquery.fittext.js"></script>
+<script type="text/javascript" src="jquery.textillate.js"></script>
+
+
+<link rel="stylesheet" href="animate.css" />
+</head>
+<body>
+
+<style>
+h1 {
+	font-size: 100px; padding: 50px;
+	color: #333;
+	text-shadow: 0.15vmin 0.15vmin rgba(0, 0, 0, 0.5);
+}
+h1 span {
+font-size: inherit;
+	}
+</style>
+
+
+
+<h1 class="tlt" data-in-effect="rollIn">Title</h1>
+
+
+
+
+
+
+<script>
+$(function () {
+
+	$('.tlt').textillate({
+		in: {
+  	// set the effect name
+    effect: 'bounceInDown', //flash, bounce, bounceIn, bounceDown, swing, pulse, flip, fadeIn, fadeInUp, fadeInDown, fadeInRight, fadeInUpBig, fadeInLeftBig, 
+
+    // set the delay factor applied to each consecutive character
+    delayScale: 1.5,
+
+    // set the delay between each character
+    delay: 100,
+
+    // set to true to animate all the characters at the same time
+    sync: false, //한번에
+    shuffle: false, //랜덤
+    reverse: false, //뒤에서순차
+    sequence: true, //순차
+
+    // callback that executes once the animation has finished
+    callback: function () {}
+  },
+
+  // out animation settings.
+  out: {
+    effect: 'bounce',
+    delayScale: 1.5,
+    delay: 50,
+    sync: false,
+    shuffle: false,
+    reverse: false,
+    callback: function () {}
+  },
+	//loop: true
+
+	});
+
+})
+
+
+</script>
+
+
+
+</body>
+</html>
